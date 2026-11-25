@@ -7,6 +7,7 @@ __pycache__/
 # Virtual environments
 venv/
 .venv/
+.runenv/
 env/
 ENV/
 env.bak/
@@ -24,12 +25,14 @@ instance/
 *.db
 *.sqlite
 *.sqlite3
+database/*.db*
 
 # Uploads and logs
 uploads/*
 !uploads/.gitkeep
 logs/*
 !logs/.gitkeep
+server*.log
 
 # Distribution and packaging
 .Python
