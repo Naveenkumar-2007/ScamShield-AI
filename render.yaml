@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: scamshield-ai
+    runtime: docker
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      # The included demo database is recreated if absent. Attach Render Postgres
+      # and replace this value for durable production scan history.
+      - key: DATABASE_URL
+        value: sqlite:////app/database/scamshield.db

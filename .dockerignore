@@ -1,0 +1,11 @@
+.git
+.venv
+.runenv
+__pycache__
+*.py[cod]
+.env
+instance
+logs
+uploads
+database/*.db
+server*.log

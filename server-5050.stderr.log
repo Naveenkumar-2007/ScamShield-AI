@@ -1,0 +1,164 @@
+[2026-11-25 23:58:41,219] INFO in __init__: Successfully connected to primary database.
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\pandas\core\arrays\masked.py:63: UserWarning: Pandas requires version '1.5.0' or newer of 'bottleneck' (version '1.4.2' currently installed).
+  from pandas.core import (
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.240.79.19:5050
+Press CTRL+C to quit
+127.0.0.1 - - [25/Nov/2026 23:59:39] "GET / HTTP/1.1" 200 -
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator MultinomialNB from version 1.7.2 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfTransformer from version 1.7.2 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.7.2 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+127.0.0.1 - - [25/Nov/2026 23:59:40] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 23:59:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 23:59:50] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 23:59:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 23:59:58] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 23:59:58] "GET /static/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 23:59:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Nov/2026 00:00:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:00:10] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:00:10] "GET /static/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:00:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Nov/2026 00:00:46] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:00:46] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:00:46] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:00:46] "GET /static/js/scanner.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:10] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:10] "GET /scan/8 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:10] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:10] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:20] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:21] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:21] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:21] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:25] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:25] "GET /scan/9 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:25] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:25] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:28] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:28] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:28] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:28] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:29] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:29] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:29] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:42] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [26/Nov/2026 00:02:42] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:42] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:42] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:42] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:42] "GET /api/dashboard/stats HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:56] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:02:56] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:56] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:02:56] "GET /static/js/scanner.js HTTP/1.1" 304 -
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.7.2 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+127.0.0.1 - - [26/Nov/2026 00:03:03] "POST /api/scan/email HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:03:03] "GET /scan/10 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:03:03] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:03:03] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:03:05] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:03:05] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:03:05] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:03:05] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:20] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:07:20] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:20] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:20] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:34] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:07:34] "GET /scan/11 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:07:34] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:34] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:40] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:07:40] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:40] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:07:40] "GET /static/js/scanner.js HTTP/1.1" 304 -
+[2026-11-26 00:08:35,351] WARNING in image_analyzer: Tesseract binary not found on host machine.
+127.0.0.1 - - [26/Nov/2026 00:08:35] "POST /api/scan/image HTTP/1.1" 400 -
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.7.2 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+C:\Users\navee\AppData\Roaming\Python\Python312\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator RandomForestClassifier from version 1.7.2 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+127.0.0.1 - - [26/Nov/2026 00:08:56] "POST /api/scan/url HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:08:56] "GET /scan/12 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:08:56] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:08:56] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:08:58] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:08:58] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:08:58] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:08:58] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:01] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:01] "GET /scan/13 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:01] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:01] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:02] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:02] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:02] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:02] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:10] "POST /api/scan/url HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:10] "GET /scan/14 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:10] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:10] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:12] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:12] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:12] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:12] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:24] "POST /api/scan/url HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:24] "GET /scan/15 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:24] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:24] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:41] "GET /history HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:41] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:41] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:44] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:44] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:44] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:44] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:45] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:45] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:45] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:46] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:46] "GET /api/dashboard/stats HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:51] "GET /scan/15 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:51] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:51] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:54] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:09:54] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:54] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:09:54] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:10] "POST /api/scan/text HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:10] "GET /scan/16 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:10] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:10] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:12] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:12] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:12] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:12] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:19] "POST /api/scan/email HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:19] "GET /scan/17 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:19] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:19] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:22] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:22] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:22] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:22] "GET /static/js/scanner.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:32] "POST /api/scan/email HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:32] "GET /scan/18 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:33] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:33] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:35] "GET /scan HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 00:10:35] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:35] "GET /static/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [26/Nov/2026 00:10:35] "GET /static/js/scanner.js HTTP/1.1" 304 -
