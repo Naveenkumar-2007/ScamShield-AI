@@ -86,7 +86,7 @@ def create_app(config_class=Config):
     @app.context_processor
     def inject_global_vars():
         return {
-            "app_name": "ScamShield AI",
+            "app_name": "Fresh Intelligent Spam and Malicious URL Detection System",
             "version": "1.0.0",
         }
 
