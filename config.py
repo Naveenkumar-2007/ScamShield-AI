@@ -29,17 +29,22 @@ class Config:
     DB_PORT = os.environ.get("DB_PORT", "3306")
     DB_NAME = os.environ.get("DB_NAME", "scamshield_db")
 
+    # SQLite fallback URI if MySQL connection cannot be established
+    FALLBACK_DATABASE_URI = f"sqlite:///{BASE_DIR / 'database' / 'scamshield.db'}"
+
+    # A managed provider should supply DATABASE_URL (for example Render Postgres).
+    # SQLite is the reliable default for local and demo Docker runs; attempting a
+    # MySQL connection by default causes Render worker boot failures when no MySQL
+    # service is configured.
     custom_db_url = os.environ.get("DATABASE_URL")
     if custom_db_url:
         SQLALCHEMY_DATABASE_URI = custom_db_url
-    else:
-        # Default MySQL URI
+    elif os.environ.get("USE_MYSQL", "").lower() in ("true", "1", "yes"):
         SQLALCHEMY_DATABASE_URI = (
             f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?charset=utf8mb4"
         )
-
-    # SQLite fallback URI if MySQL connection cannot be established
-    FALLBACK_DATABASE_URI = f"sqlite:///{BASE_DIR / 'database' / 'scamshield.db'}"
+    else:
+        SQLALCHEMY_DATABASE_URI = FALLBACK_DATABASE_URI
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {
