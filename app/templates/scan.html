@@ -36,6 +36,15 @@
       <button class="tab-btn {% if active_tab == 'pdf' %}active{% endif %}" data-tab="pdf">
         &#128196; PDF Invoice Scanner
       </button>
+      <button class="tab-btn {% if active_tab == 'payment' %}active{% endif %}" data-tab="payment">
+        &#128179; Payment Safety
+      </button>
+      <button class="tab-btn {% if active_tab == 'sender' %}active{% endif %}" data-tab="sender">
+        &#128100; Sender Trust
+      </button>
+      <button class="tab-btn {% if active_tab == 'protection' %}active{% endif %}" data-tab="protection">
+        &#128737; Account Protection
+      </button>
     </div>
 
     <!-- TAB 1: SMS / WhatsApp Message Scanner -->
@@ -192,6 +201,68 @@
         <button type="submit" id="btn-scan-pdf" class="btn btn-primary btn-block" style="padding: 12px;">
           Perform Invoice Risk Audit &rarr;
         </button>
+      </form>
+    </div>
+
+    <!-- TAB 6: Payment Safety -->
+    <div class="tab-content {% if active_tab == 'payment' %}active{% endif %}" id="tab-payment">
+      <form id="form-payment-safety">
+        <div class="form-group">
+          <label class="form-label">UPI ID (optional)</label>
+          <input type="text" id="payment-upi" name="upi_id" class="form-control" placeholder="e.g. reward.claim@upi">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Indian Mobile Number (optional)</label>
+          <input type="text" id="payment-phone" name="phone" class="form-control" placeholder="e.g. +91 9876543210">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Payment Message</label>
+          <textarea id="payment-message" name="message" class="form-control" rows="4" placeholder="Paste the payment or cashback message here..."></textarea>
+        </div>
+        <div style="margin-bottom:20px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+          <span style="font-size:0.78rem; color:var(--text-dim);">Try a demo:</span>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('payment-upi').value='reward.claim@upi'; document.getElementById('payment-phone').value='9876543210'; document.getElementById('payment-message').value='Congratulations! You won Rs 7,500 cashback. Enter your UPI PIN immediately to receive your reward.';">Cashback PIN Scam</button>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('payment-upi').value='merchant@okaxis'; document.getElementById('payment-phone').value='9876543210'; document.getElementById('payment-message').value='Your grocery order total is Rs 420. Please verify the recipient name in your banking app before payment.';">Safe Payment Note</button>
+        </div>
+        <button type="submit" id="btn-payment-safety" class="btn btn-primary btn-block" style="padding:12px;">Check Payment Safety &rarr;</button>
+      </form>
+    </div>
+
+    <!-- TAB 7: Sender Trust -->
+    <div class="tab-content {% if active_tab == 'sender' %}active{% endif %}" id="tab-sender">
+      <form id="form-sender-trust">
+        <div class="form-group"><label class="form-label">Organisation Claimed</label><input type="text" id="sender-org" name="organization" class="form-control" placeholder="e.g. SBI, Income Tax Department, Courier company"></div>
+        <div class="form-group"><label class="form-label">Sender Email / Address</label><input type="text" id="trust-sender" name="sender" class="form-control" placeholder="e.g. alert@sbi-security-update.xyz"></div>
+        <div class="form-group"><label class="form-label">Website or Link</label><input type="text" id="trust-website" name="website" class="form-control" placeholder="e.g. https://example.com"></div>
+        <div style="margin-bottom:20px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+          <span style="font-size:0.78rem; color:var(--text-dim);">Try a demo:</span>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('sender-org').value='SBI'; document.getElementById('trust-sender').value='alert@sbi-security-update.xyz'; document.getElementById('trust-website').value='http://sbi-kyc-update.xyz/login';">SBI Lookalike Scam</button>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('sender-org').value='GitHub'; document.getElementById('trust-sender').value='notifications@github.com'; document.getElementById('trust-website').value='https://github.com';">Safe Official Sender</button>
+        </div>
+        <button type="submit" id="btn-sender-trust" class="btn btn-primary btn-block" style="padding:12px;">Check Sender Trust &rarr;</button>
+      </form>
+    </div>
+
+    <!-- TAB 8: Account Protection -->
+    <div class="tab-content {% if active_tab == 'protection' %}active{% endif %}" id="tab-protection">
+      <form id="form-account-protection">
+        <div class="form-group">
+          <label class="form-label">What happened?</label>
+          <select id="incident-type" name="incident_type" class="form-control">
+            <option value="unknown">I received a suspicious message or call</option>
+            <option value="otp_shared">I shared an OTP, PIN, CVV, or password</option>
+            <option value="money_sent">I sent money to a suspicious person</option>
+            <option value="malicious_link">I opened a suspicious link or entered details</option>
+            <option value="apk_installed">I installed an unknown APK or app</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Optional details</label><textarea id="incident-details" name="details" class="form-control" rows="4" placeholder="Add a transaction ID, app name, or what the caller asked you to do. Do not enter passwords, OTPs, or full card numbers."></textarea></div>
+        <div style="margin-bottom:20px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+          <span style="font-size:0.78rem; color:var(--text-dim);">Try a demo:</span>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('incident-type').value='otp_shared'; document.getElementById('incident-details').value='I shared an OTP after a caller claimed my bank account would be blocked.';">OTP Shared</button>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('incident-type').value='unknown'; document.getElementById('incident-details').value='I received a message and did not click any links or share information.';">No Action Taken</button>
+        </div>
+        <button type="submit" id="btn-account-protection" class="btn btn-primary btn-block" style="padding:12px;">Create My Safety Plan &rarr;</button>
       </form>
     </div>
 

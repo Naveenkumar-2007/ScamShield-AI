@@ -10,6 +10,7 @@ from app.services.email_analyzer import analyze_email_content
 from app.services.url_analyzer import analyze_url_target
 from app.services.image_analyzer import analyze_image_file
 from app.services.invoice_analyzer import analyze_pdf_invoice
+from app.services.safety_engine_client import evaluate as evaluate_safety_tool
 from app.utils.file_security import validate_upload, save_securely, safe_delete
 
 scan_bp = Blueprint("scan", __name__)
@@ -137,6 +138,40 @@ def api_scan_url():
     scan_id = _save_scan_to_database("url", analysis)
     analysis["scan_id"] = scan_id
     analysis["result_url"] = url_for("scan.view_result", scan_id=scan_id)
+    return jsonify(analysis)
+
+
+@scan_bp.route("/api/scan/payment-safety", methods=["POST"])
+def api_payment_safety():
+    data = request.get_json(silent=True) or request.form
+    upi_id, phone, message = data.get("upi_id", "").strip(), data.get("phone", "").strip(), data.get("message", "").strip()
+    if not any((upi_id, phone, message)):
+        return jsonify({"success": False, "error": "Enter a UPI ID, phone number, or payment message."}), 400
+    analysis = evaluate_safety_tool("payment", {"upi_id": upi_id, "phone": phone, "message": message})
+    scan_id = _save_scan_to_database("payment_safety", analysis)
+    analysis.update({"scan_id": scan_id, "result_url": url_for("scan.view_result", scan_id=scan_id)})
+    return jsonify(analysis)
+
+
+@scan_bp.route("/api/scan/sender-trust", methods=["POST"])
+def api_sender_trust():
+    data = request.get_json(silent=True) or request.form
+    organization, sender, website = data.get("organization", "").strip(), data.get("sender", "").strip(), data.get("website", "").strip()
+    if not any((organization, sender, website)):
+        return jsonify({"success": False, "error": "Enter an organisation, sender, or website."}), 400
+    analysis = evaluate_safety_tool("sender", {"organization": organization, "sender": sender, "website": website})
+    scan_id = _save_scan_to_database("sender_trust", analysis)
+    analysis.update({"scan_id": scan_id, "result_url": url_for("scan.view_result", scan_id=scan_id)})
+    return jsonify(analysis)
+
+
+@scan_bp.route("/api/scan/account-protection", methods=["POST"])
+def api_account_protection():
+    data = request.get_json(silent=True) or request.form
+    incident_type, details = data.get("incident_type", "unknown").strip(), data.get("details", "").strip()
+    analysis = evaluate_safety_tool("protection", {"incident_type": incident_type, "details": details})
+    scan_id = _save_scan_to_database("account_protection", analysis)
+    analysis.update({"scan_id": scan_id, "result_url": url_for("scan.view_result", scan_id=scan_id)})
     return jsonify(analysis)
 
 

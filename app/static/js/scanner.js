@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
   setupFormHandler("form-message-scan", "/api/scan/text", "btn-scan-msg");
   setupFormHandler("form-email-scan", "/api/scan/email", "btn-scan-email");
   setupFormHandler("form-url-scan", "/api/scan/url", "btn-scan-url");
+  setupFormHandler("form-payment-safety", "/api/scan/payment-safety", "btn-payment-safety");
+  setupFormHandler("form-sender-trust", "/api/scan/sender-trust", "btn-sender-trust");
+  setupFormHandler("form-account-protection", "/api/scan/account-protection", "btn-account-protection");
   setupFileFormHandler("form-image-scan", "/api/scan/image", "btn-scan-image", "image-file-input", "image-dropzone-text");
   setupFileFormHandler("form-pdf-scan", "/api/scan/pdf", "btn-scan-pdf", "pdf-file-input", "pdf-dropzone-text");
 });
